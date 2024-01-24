@@ -9,7 +9,7 @@
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview --port 3003",
     "test:unit": "vitest",
-    "build-only": "vite build",
+    "build-only": "vite build --base=/mfe-app-v/",
     "type-check": "vue-tsc --build --force",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/"
