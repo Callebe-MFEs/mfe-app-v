@@ -2,7 +2,7 @@ import './assets/main.css'
 
 import { createApp, h } from 'vue'
 import App from './App.vue'
-import router from './router'
+import getRouter from './router'
 import singleSpaVue from 'single-spa-vue'
 
 const vueLifecycles = singleSpaVue({
@@ -20,7 +20,8 @@ const vueLifecycles = singleSpaVue({
     }
   },
   handleInstance(app) {
-    app.use(router)
+    console.log(app.props)
+    app.use(getRouter('/mfeAppV'))
   }
 })
 

@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "vite --port 3003",
-    "dev": "vite",
+    "dev": "vite build --watch & vite preview",
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview --port 3003",
     "test:unit": "vitest",
